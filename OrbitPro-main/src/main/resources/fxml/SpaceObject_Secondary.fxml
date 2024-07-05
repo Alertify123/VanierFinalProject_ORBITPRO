@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<Group fx:id="videoGroup" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/fxml/Sim2CSS.css">
+   <children>
+      <AnchorPane fx:id="infoAnchorPane" prefHeight="464.0" prefWidth="743.0">
+         <children>
+            <VBox fx:id="backVBox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" prefHeight="55.0" prefWidth="99.0" text="BACK" />
+               </children>
+            </VBox>
+            <VBox fx:id="videoVBox" layoutX="100.0" prefHeight="1000.0" prefWidth="704.0">
+               <children>
+                  <MediaView fx:id="videoMediaView" fitHeight="500.0" fitWidth="650.0">
+                     <VBox.margin>
+                        <Insets left="200.0" right="400.0" top="200.0" />
+                     </VBox.margin>
+                  </MediaView>
+                  <Label fx:id="planetInfoLabel" prefHeight="300.0" prefWidth="1076.0" snapToPixel="false" text="Label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="300.0" right="100.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

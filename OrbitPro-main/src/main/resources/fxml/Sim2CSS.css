@@ -1,0 +1,385 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+/
+/ 
+    Created on : Mar 17, 2024, 11:03:16 AM
+    Author     : ChrisJ
+*/
+.label{
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 13pt; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-padding: 10 10; 
+    -fx-text-alignment: center; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-background-color: transparent;
+
+}
+
+.choice-box{
+    -fx-background-color: lightcyan;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-color: gray;
+}
+
+.choice-box .context-menu { -fx-background-color: black; }
+
+.choice-box .menu-item:focused { -fx-background-color: lightyellow; }
+
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+
+.choice-box {
+  -fx-background-color: black;
+  -fx-mark-color: lightyellow
+      ;
+}
+
+.choice-box > .label { -fx-text-fill: white; }
+
+.button{
+    
+    -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 10pt; 
+    -fx-padding: 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center; 
+
+}
+
+.button:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+.button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+
+
+#bottomPane{
+    -fx-background-color: black;
+}
+
+#Left_VBox{
+    -fx-background-color: black;
+}
+
+#TopToolBar{
+    -fx-background-color: black;
+}
+
+#spaceObject_BP{
+    -fx-background-color: black;
+}
+
+.slider{
+     -fx-base: #333333; 
+    -fx-background-color: 
+        linear-gradient(to right, #000022, #111144),
+        linear-gradient(to right, #222266, #333388); 
+    -fx-background-radius: 5; 
+    -fx-background-insets: 0, 1; 
+}
+.slider.track{
+    -fx-background-color: 
+        linear-gradient(to right, #000033, #111155), 
+        linear-gradient(to right, #333366, #444477); 
+    -fx-background-radius: 5; 
+    -fx-padding: 0 2; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 2); 
+}
+.slider.thumb {
+    -fx-background-color: #4444FF; 
+    -fx-background-radius: 50%; 
+    -fx-padding: 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 5); 
+}
+.slider.tick-mark {
+    -fx-stroke: #666666; 
+}
+.slider.tick-label {
+    -fx-text-fill: #FFFFFF; 
+    -fx-font-size: 10pt; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 2, 0, 0, 1); 
+}
+
+#planetInfoLabel{
+    -fx-text-fill: white;
+}
+
+#MassSliderNumbers{
+    -fx-background-color:
+        linear-gradient(to bottom, #000000, #333399), 
+        linear-gradient(to bottom, #333399, #6633CC), 
+        linear-gradient(to bottom, #6633CC, #990099); 
+    -fx-background-radius: 10; 
+    -fx-padding: 10 20; 
+    -fx-border-color: rgba(255, 255, 255, 0.3); 
+    -fx-border-radius: 10; 
+    -fx-border-width: 1; 
+    -fx-text-fill: #FFFFFF; 
+    -fx-font-family: "Consolas", "Courier New", sans-serif;
+    -fx-font-size: 14pt; 
+    -fx-text-alignment: center; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 2); 
+    -fx-wrap-text: true; 
+}
+#volumeNumbers{
+    -fx-background-color:
+        linear-gradient(to bottom, #000000, #333399), 
+        linear-gradient(to bottom, #333399, #6633CC), 
+        linear-gradient(to bottom, #6633CC, #990099); 
+    -fx-background-radius: 10; 
+    -fx-padding: 10 20; 
+    -fx-border-color: rgba(255, 255, 255, 0.3); 
+    -fx-border-radius: 10; 
+    -fx-border-width: 1; 
+    -fx-text-fill: #FFFFFF; 
+    -fx-font-family: "Consolas", "Courier New", sans-serif; 
+    -fx-font-size: 14pt; 
+    -fx-text-alignment: center; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 2); 
+    -fx-wrap-text: true; 
+}
+
+#planetInfoLabel{
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 16pt; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-padding: 10 20; 
+    -fx-text-alignment: center; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-background-color: transparent; 
+}
+
+#backButton{
+        -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt; 
+    -fx-padding: 2.5 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center; 
+
+}
+#backButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+#backButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+
+#startButton{
+       -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt; 
+    -fx-padding: 2.5 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2);
+    -fx-text-alignment: center; 
+
+}
+#startButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+#startButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+
+#resetButton{
+        -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2;
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt; 
+    -fx-padding: 2.5 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center;
+
+}
+
+#resetButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+#resetButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+#pauseButton{
+        -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt; 
+    -fx-padding: 2.5 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center; 
+
+}
+
+#pauseButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066);
+}
+#pauseButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+#moreButton{
+        -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc);
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt;
+    -fx-padding: 2.5 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center; 
+
+}
+
+#moreButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+#moreButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+#okButton{
+        -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 6pt; 
+    -fx-padding: 2.5 5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+    -fx-text-alignment: center; 
+
+}
+
+#okButton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.1); 
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+}
+#okButton:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-border-width: 3; 
+}
+
+.scroll-pane{
+      -fx-background-color: 
+        linear-gradient(to bottom, rgba(68, 34, 102, 0.5), rgba(51, 51, 136, 0.5)), 
+        linear-gradient(to right, rgba(68, 34, 102, 0.5), rgba(34, 102, 68, 0.5)); 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-padding: 10; 
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent; 
+}
+
+.scroll-pane > .viewport > .scroll-bar {
+    -fx-background-color: transparent; 
+}
+
+.scroll-bar {
+    -fx-background-color: transparent; 
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 10px; 
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 10px; 
+}
+
+.scroll-bar .track {
+    -fx-background-color: linear-gradient(to bottom, #333399, #6666FF); 
+    -fx-background-radius: 10;
+    -fx-padding: 3; 
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to top, #ff0066, #ff99cc); 
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.5), 3, 0, 0, 1);
+}
+
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow,
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: linear-gradient(to bottom, #ff0066, #ff99cc); 
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent; 
+}
+
+.text-field{
+    -fx-background-color: transparent; 
+    -fx-border-color: linear-gradient(to right, #ff0066, #ff99cc); 
+    -fx-border-width: 2; 
+    -fx-border-radius: 10; 
+    -fx-padding: 10 20; 
+    -fx-text-fill: linear-gradient(to right, #f06, #f9a, #f06); 
+    -fx-font-family: "Roboto", "Arial", sans-serif; 
+    -fx-font-size: 12pt; 
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.3), 5, 0, 0, 2); 
+}
+
+.text-field:focused {
+    -fx-border-color: linear-gradient(to right, #f9a, #ff0066); 
+    -fx-border-width: 3; 
+}
+
+.text-field:disabled {
+    -fx-text-fill: rgba(255, 255, 255, 0.5); 
+}
+
+
+
+
+
+
+
+
+

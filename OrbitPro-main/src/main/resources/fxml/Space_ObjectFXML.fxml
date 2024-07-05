@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane fx:id="spaceObject_BP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="929.0" prefWidth="1323.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/fxml/Sim2CSS.css">
+   <top>
+      <ToolBar fx:id="TopToolBar" prefHeight="35.0" prefWidth="1323.0" BorderPane.alignment="CENTER">
+         <items>
+            <ChoiceBox fx:id="Actions_ChoiceBox" prefHeight="25.0" prefWidth="183.0" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <Group fx:id="animationGroup" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="animationPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="860.0" prefWidth="1100.0">
+               <children>
+                  <Circle fx:id="Mercury" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Uranus" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Neptune" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Earth" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Mars" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Saturn" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Venus" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Moon" fill="DODGERBLUE" layoutX="550.0" layoutY="428.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Sun" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Jupiter" fill="DODGERBLUE" layoutX="550.0" layoutY="430.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Pane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Group>
+   </center>
+   <bottom>
+      <Group fx:id="bottomGroup" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="bottomPane" prefHeight="10.0" prefWidth="1182.0">
+               <children>
+                  <Label fx:id="timeLabel" alignment="CENTER" layoutX="510.0" layoutY="4.0" prefHeight="17.0" prefWidth="335.0" text="Time" />
+               </children>
+            </Pane>
+         </children>
+      </Group>
+   </bottom>
+   <left>
+      <VBox fx:id="Left_VBox" prefHeight="878.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="itemLabel" alignment="CENTER" prefHeight="17.0" prefWidth="196.0" text="SELECT OBJECT" />
+            <ScrollPane fx:id="objectScrollPane" prefHeight="246.0" prefWidth="160.0">
+               <content>
+                  <ScrollBar fx:id="itemScrollBar" orientation="VERTICAL" prefHeight="246.0" prefWidth="14.0" />
+               </content>
+            </ScrollPane>
+            <VBox fx:id="sliderVBox" alignment="CENTER" prefHeight="197.0" prefWidth="180.0">
+               <children>
+                  <Label fx:id="volumeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="189.0" text="VOLUME" />
+                  <Slider fx:id="volumeSlider" majorTickUnit="10.0" minorTickCount="5" prefHeight="59.0" prefWidth="187.0" showTickLabels="true" showTickMarks="true" value="45.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Slider>
+                  <Label fx:id="volumeNumbers" text="Label" />
+                  <Label fx:id="massLabel" alignment="CENTER" prefHeight="17.0" prefWidth="188.0" text="MASS SLIDER" />
+                  <Slider fx:id="massSlider" blockIncrement="500.0" majorTickUnit="33333.0" max="100000.0" min="10.0" minorTickCount="500" prefHeight="37.0" prefWidth="187.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="10.0" />
+                  <Label fx:id="MassSliderNumbers" alignment="CENTER" layoutX="100.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox fx:id="velocityVBox" prefHeight="128.0" prefWidth="187.0">
+               <children>
+                  <Label fx:id="velocityLabel" alignment="CENTER" prefHeight="17.0" prefWidth="188.0" text=" VELOCITY MODIFIER" />
+                  <HBox fx:id="velocityHBox" alignment="CENTER" prefHeight="109.0" prefWidth="174.0">
+                     <children>
+                        <TextField fx:id="velocityField" alignment="CENTER" layoutY="5.0" prefHeight="38.0" prefWidth="149.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="InfoVBox" prefHeight="191.0" prefWidth="187.0">
+               <children>
+                  <HBox fx:id="infoHBox" alignment="CENTER_LEFT" prefHeight="192.0" prefWidth="171.0">
+                     <children>
+                        <Label fx:id="infoLabel" contentDisplay="RIGHT" prefHeight="188.0" prefWidth="146.0" textOverrun="CENTER_ELLIPSIS" />
+                        <Button fx:id="moreButton" mnemonicParsing="false" prefHeight="188.0" prefWidth="49.0" text="More" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" prefHeight="97.0" prefWidth="67.0" text="START" />
+                  <Button fx:id="pauseButton" mnemonicParsing="false" prefHeight="97.0" prefWidth="67.0" text="PAUSE" />
+                  <Button fx:id="resetButton" mnemonicParsing="false" prefHeight="97.0" prefWidth="67.0" text="RESET">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</BorderPane>
